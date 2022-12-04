@@ -1,0 +1,42 @@
+name: issue form
+description: Let's have a discussion. You can start one or submit question and feature requests by opening an issue.
+title: "[Issue]: "
+labels: "Issue:"
+assignees:
+  - MarkusEicher
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping to improve our project, we hope it will soon be yours too! We ask you to help us by first checking, if one of the already opened issues corresponds with your issue or topic. In this case, please contribute by commenting on the open issue, before opening a new one here. Thanks for helping to reduce the burden of maintaining this project. We appreciate your support!
+  - type: textarea
+    id: topic-issue-opinion
+    attributes:
+      label: What is the topic, opinion, or issue you want to talk about?
+      description: Topic
+      placeholder: Let's talk...
+      value: "Let's talk..."
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: Log outputs, screenshots, questions? 
+      description: Please copy and paste any relevant log output or screenshots. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: input
+    id: contact
+    attributes:
+      label: How to contact you
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

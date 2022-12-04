@@ -1,0 +1,42 @@
+name: Bug Report
+description: Please tell us, what kind of problem you found
+title: "[Bug]: "
+labels: "bug"
+assignees:
+  - MarkusEicher
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us to improve our product!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: codeandlogs
+    attributes:
+      label: Code and logs 
+      description: Please copy and paste any relevant log output or screenshots. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: input
+    id: contact
+    attributes:
+      label: How to contact you
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
