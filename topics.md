@@ -7,3 +7,8 @@ The following is a list of brainstorming about which concepts, technologies and 
 - Secure Scuttlebut SSCB
 - Matrix
 - Go-Fed
+- Codeberg
+- IPFS
+- Beaker Browser
+- Ethereum
+- Polygon
