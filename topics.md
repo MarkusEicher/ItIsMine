@@ -12,3 +12,4 @@ The following is a list of brainstorming about which concepts, technologies and 
 - Beaker Browser
 - Ethereum
 - Polygon
+- Radicle
